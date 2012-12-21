@@ -4,9 +4,53 @@
     <servlet-name>heliumv</servlet-name>
     <servlet-class>com.lp.webapp.heliumv.HeliumVServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>CCOrderResponseServlet</display-name>
+  	<servlet-name>CCOrderResponseServlet</servlet-name>
+  	<servlet-class>com.lp.webapp.cc.CCOrderResponseServlet</servlet-class>
+  	
+  	<init-param>
+		<param-name>user</param-name>
+		<param-value>webshop1</param-value>
+	</init-param>	
+  	<init-param>
+		<param-name>password</param-name>
+		<param-value>webshop1</param-value>
+    </init-param>
+  	<init-param>
+		<param-name>country</param-name>
+		<param-value>at</param-value>
+    </init-param>
+  	<init-param>
+		<param-name>language</param-name>
+		<param-value>de</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>MemoryWatcherServlet</display-name>
+  	<servlet-name>MemoryWatcherServlet</servlet-name>
+  	<servlet-class>com.lp.webapp.heliumv.MemoryWatcherServlet</servlet-class>	
+  </servlet>
+  
   <servlet-mapping>
     <servlet-name>heliumv</servlet-name>
     <url-pattern>/heliumv</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CCOrderResponseServlet</servlet-name>
+  	<url-pattern>/CCOrderResponseServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  	<servlet-name>MemoryWatcherServlet</servlet-name>
+  	<url-pattern>/MemoryWatcherServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>
 
