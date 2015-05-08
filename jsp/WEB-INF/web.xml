@@ -38,6 +38,14 @@
   	<servlet-class>com.lp.webapp.heliumv.MemoryWatcherServlet</servlet-class>	
   </servlet>
   
+ <servlet>
+  	<description>
+  	</description>
+  	<display-name>LogoutAllClientsServlet</display-name>
+  	<servlet-name>LogoutAllClientsServlet</servlet-name>
+  	<servlet-class>com.lp.webapp.heliumv.LogoutAllClientsServlet</servlet-class>	
+  </servlet>
+    
   <servlet-mapping>
     <servlet-name>heliumv</servlet-name>
     <url-pattern>/heliumv</url-pattern>
@@ -52,5 +60,9 @@
   	<url-pattern>/MemoryWatcherServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+  	<servlet-name>LogoutAllClientsServlet</servlet-name>
+  	<url-pattern>/LogoutAllClientsServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
 
